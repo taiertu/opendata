@@ -91,12 +91,6 @@ map.plotly = plot_ly(country.map, z = count,
            filename="r-docs/world-choropleth") %>%
   layout(title = 'Mapping of open data use cases', geo = g)
 
-colorscale= list(list(0 = "#F7FBFF"), list(0.5 = "#1D6AAF"), list(1 = "#08306B"))
-colors = 'Blues', 
-
-#{colors:['#f1cddb','#ba064e','#a70546']}"
-
-
 ################
 #### Bar plot showing organization types by income groups
 od.final$Income_Code <- factor(od.final$Income_Code, levels = c("HIC", "UMC", "LMC", "LIC"))
@@ -147,12 +141,15 @@ perc.p1 = data.t %>% plot_ly(x = Income_Code, y = perc, type = "bar",
 od.final2$org_greatest_impact[od.final2$org_greatest_impact== ""] <- "Other"
 od.final2$org_greatest_impact <- factor(od.final2$org_greatest_impact, levels = c("Other", "Environmental", "Governance", "Economic", "Social"))
 
+p2.x = list(title = "Income Groups")
+p2.y = list(title = "Case Counts")
+
 p2 = od.final2 %>% count(Income_Code, org_greatest_impact) %>% 
   plot_ly(x = Income_Code, y = n, type = "bar", 
           color = org_greatest_impact, 
           colors = c("#880A00", "#FD5E00","#FFDF00","#B1D91B","#187A5C", "#003347"), 
           filename="r-docs/bar-color-map") %>%
-          layout(title = "Number of open data cases by organization impacts across income groups")
+          layout(title = "Number of open data cases by organization impacts across income groups", xaxis = p2.x, yaxis = p2.y)
 
 ###############
 ##### the number of data type 
