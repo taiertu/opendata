@@ -24,4 +24,4 @@ we need from ODE, Open Data Barometer, and income economies.</p>
 4. Scripts
 <p> dataclean.R contains all scripts for cleaning data, creating datasets, and making explotary analysis. </p>
 <p> visualization.R contains all scripts for making visualizations. The main tool used is plotly. It is an open source visualization
-platform but requires registration first. You can run the code using mine API, which was listed in the scripts. </p>
+platform but requires registration first. You can run the code using my API, which was listed in the scripts. </p>
