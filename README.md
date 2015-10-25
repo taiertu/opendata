@@ -23,7 +23,7 @@ dataset. org.final.Rds is the main dataset we used for the analysis and visualiz
 <p> org_dataclean.R contains all scripts for cleaning data, creating datasets, and making explotary analysis. </p>
 <p> org_visualization.R contains all scripts for making visualizations. The main tool used is plotly. It is an open source visualization
 
-Files in "DataType" folder
+Files in "DataType" folder:
 <p></p>
 1. arcgis_flatfile.json & org_profile.json
 <p>Raw datasets provided by ODE, stored in json file. arcgis_flatfile includes the data use information (e.g. what type of 
