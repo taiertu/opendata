@@ -5,6 +5,7 @@ World Bank at http://data.worldbank.org/about/country-and-lending-groups</p>
 <p> ODB_2014_Rankings.csv was obtained from Open Data Barometer organization via http://www.opendatabarometer.org/.</p>
 
 Files in "OrganizationLevel" folder:
+<p></p>
 1. org_profile.json
 <p>Raw datasets provided by ODE, stored in json file. org_profile keeps organization profile information, such as organization location, the size of organization, organization greatest impact, industrial type, etc. The total number of records is 1,259. </p>
 
@@ -23,6 +24,7 @@ dataset. org.final.Rds is the main dataset we used for the analysis and visualiz
 <p> org_visualization.R contains all scripts for making visualizations. The main tool used is plotly. It is an open source visualization
 
 Files in "DataType" folder
+<p></p>
 1. arcgis_flatfile.json & org_profile.json
 <p>Raw datasets provided by ODE, stored in json file. arcgis_flatfile includes the data use information (e.g. what type of 
 data is used,from what country, etc.). The total number of record is 4184. </p>
