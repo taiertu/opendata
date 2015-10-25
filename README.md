@@ -1,5 +1,5 @@
 # Open Data Enterprise (ODE) Project
-External data sources
+External data sources:
 <p>countrygroup.Rds contains country name, code, and income economies information. It was obtained from 
 World Bank at http://data.worldbank.org/about/country-and-lending-groups</p>
 <p> ODB_2014_Rankings.csv was obtained from Open Data Barometer organization via http://www.opendatabarometer.org/.</p>
